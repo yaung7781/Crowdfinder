@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/id_main_navBar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false" >
+
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/header_bk" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo" />
+
+        <Button
+            android:id="@+id/id_main_signoutBtn"
+            android:layout_width="69dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:background="#ffffff"
+            android:text="Sign Out"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/id_main_searchBtn"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/id_main_signoutBtn"
+            android:layout_alignBottom="@+id/id_main_signoutBtn"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/search_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/id_main_navBar"
+        android:layout_marginBottom="60dp" >
+
+        <fragment
+            android:id="@+id/id_main_mapView"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp" />
+
+        <RelativeLayout
+            android:id="@+id/id_main_categoryBkgnd"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/id_main_mapView"
+            android:layout_marginTop="-50dp"
+            android:background="#ffffff" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/popup_bk" >
+
+                <TextView
+                    android:id="@+id/id_main_category_cell_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="0dp"
+                    android:text="What&apos;s Hot right Now"
+                    android:textColor="#f57f20"
+                    android:textSize="24dp" />
+
+                <ImageView
+                    android:id="@+id/id_main_categoryArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_main_category_cell_textview"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="0dp"
+                    android:src="@drawable/bottom_btn" />
+
+                <View
+                    android:id="@+id/id_main_categoryHeader"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/id_main_categoryList"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/relativeLayout1" >
+            </ListView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_main_searchView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/id_main_navBar"
+        android:background="#ffffff" >
+
+        <EditText
+            android:id="@+id/id_main_searchText"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:ems="10" >
+        </EditText>
+
+        <Button
+            android:id="@+id/id_main_gobtn"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/id_main_searchText"
+            android:text="GO" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <ImageView
+            android:id="@+id/id_favoriteBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/tap_inactive_favorite" />
+
+        <ImageView
+            android:id="@+id/id_eventBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/tap_inactive_event" />
+
+        <ImageView
+            android:id="@+id/id_accountBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="160dp"
+            android:src="@drawable/tap_inactive_account" />
+
+        <ImageView
+            android:id="@+id/id_recommendBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="240dp"
+            android:src="@drawable/tap_inactive_recommend" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

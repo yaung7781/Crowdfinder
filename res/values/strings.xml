@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Crowdfinder</string>
+    <string name="facebook_app_id">437311406394656</string>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light" />
+
+    <string name="title_activity_busi_detail">BusiDetailActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_special">SpecialActivity</string>
+
+</resources>

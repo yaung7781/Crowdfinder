@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+	<RelativeLayout
+        android:id="@+id/id_main_navBar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false" >
+
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/header_bk" />
+
+        <ImageView
+            android:id="@+id/id_attenderlist_logo"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+    
+	<ListView
+	    android:id="@+id/id_attenderlist_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginBottom="60dp"
+	    android:layout_marginTop="50dp" >
+
+    </ListView>
+    
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <ImageView
+            android:id="@+id/id_favoriteBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/tap_inactive_favorite" />
+
+        <ImageView
+            android:id="@+id/id_eventBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/tap_inactive_event" />
+
+        <ImageView
+            android:id="@+id/id_accountBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="160dp"
+            android:src="@drawable/tap_inactive_account" />
+
+        <ImageView
+            android:id="@+id/id_recommendBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="240dp"
+            android:src="@drawable/tap_inactive_recommend" />
+
+    </RelativeLayout>
+    
+</RelativeLayout>

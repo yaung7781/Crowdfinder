@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.matt.crowdfinder"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        
+        <uses-library android:name="com.google.android.maps" />
+
+<!--         <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+ -->        
+        <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="3136110" />
+        
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyC6j009Dl-gPHZNUNA0m9s4NQbxmaTpvQY" />
+        
+        <meta-data
+            android:name="com.revmob.app.id"
+            android:value="537a1b5b867c116930291e32"/>
+
+        <activity
+            android:name="com.matt.crowdfinder.HomeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.matt.crowdfinder.SignUpActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.matt.crowdfinder.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.matt.crowdfinder.BusiListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.matt.crowdfinder.BusiDetailActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.matt.crowdfinder.SpecialActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.matt.crowdfinder.EventListActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.matt.crowdfinder.AttenderListActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.matt.crowdfinder.BusiContactActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.matt.crowdfinder.FavoriteActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.matt.crowdfinder.AccountActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.matt.crowdfinder.RecommendActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.matt.crowdfinder.PreviewActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.matt.crowdfinder.AddressActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.revmob.ads.fullscreen.FullscreenActivity"
+              android:theme="@android:style/Theme.Translucent"
+              android:configChanges="keyboardHidden|orientation">
+    	</activity>
+    	
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+
+</manifest>

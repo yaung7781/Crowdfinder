@@ -1,0 +1,299 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.matt.crowdfinder.BusiDetailActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="50dp" >
+
+        <ImageView
+            android:id="@+id/id_busidetail_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/no_video" />
+
+        <WebView
+            android:id="@+id/id_busidetail_webview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/id_busidetail_webview"
+            android:layout_marginTop="150dp" >
+
+            <ImageView
+                android:id="@+id/id_busidetail_image0"
+                android:layout_width="104dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/no_image_bk" />
+
+            <ImageView
+                android:id="@+id/id_busidetail_image1"
+                android:layout_width="104dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/no_image_bk" />
+
+            <ImageView
+                android:id="@+id/id_busidetail_image2"
+                android:layout_width="104dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/no_image_bk" />
+
+        </RelativeLayout>
+        
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="102dp" >
+
+	        <RelativeLayout
+	            android:id="@+id/relativeLayout3"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:fillViewport="true" >
+	
+	            <TextView
+	                android:id="@+id/id_busidetail_busiNameText"
+	                android:layout_width="200dp"
+	                android:layout_height="20dp"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginTop="5dp"
+	                android:text="Business Name Here"
+	                android:textColor="#494949"
+	                android:textSize="15dp" />
+	
+	            <TextView
+	                android:id="@+id/id_busidetail_busiDescriptionText"
+	                android:layout_width="200dp"
+	                android:layout_height="17dp"
+	                android:layout_alignLeft="@+id/id_busidetail_busiNameText"
+	                android:layout_centerVertical="false"
+	                android:layout_marginTop="30dp"
+	                android:text="Business Description Here"
+	                android:textColor="#494949"
+	                android:textSize="12dp" />
+	
+	            <TextView
+	                android:id="@+id/id_busidetail_busiOpenHourText"
+	                android:layout_width="450dp"
+	                android:layout_height="30dp"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginTop="50dp"
+	                android:layout_toLeftOf="@+id/id_busidetail_moreInfoBtn"
+	                android:text="Business Open Hour "
+	                android:textColor="#494949"
+	                android:textSize="12dp" />
+	
+	            <RatingBar
+	                android:id="@+id/id_busidetail_ratingbar"
+	                android:layout_width="wrap_content"
+	                android:layout_height="17dp"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true"
+	                android:layout_marginRight="20dp"
+	                android:layout_marginTop="20dp"
+	                android:max="5"
+	                android:numStars="5"
+	                android:progress="0"
+	                android:progressDrawable="@drawable/small_rating_bar_drawable"
+	                android:rating="0" >
+		            
+	            </RatingBar>
+	
+	            <ImageView
+	                android:id="@+id/id_busidetail_moreInfoBtn"
+	                android:layout_width="80dp"
+	                android:layout_height="20dp"
+	                android:layout_alignParentRight="true"
+	                android:layout_marginRight="20dp"
+	                android:layout_marginTop="50dp"
+	                android:src="@drawable/more_info_btn" />
+	        </RelativeLayout>
+	        
+	   	</ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="40dp"
+            android:background="#265c7a" >
+
+            <Button
+                android:id="@+id/id_busidetail_addFavourite"
+                android:layout_width="66dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/add_favor_btn" >
+			</Button>
+
+            <Button
+                android:id="@+id/id_busidetail_whoIsGoing"
+                android:layout_width="70dp"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/whos_going_btn" />
+
+            <Button
+                android:id="@+id/id_busidetail_shareLocation"
+                android:layout_width="77dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/share_location_btn" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" >
+
+            <Button
+                android:id="@+id/id_busidetail_special"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/busi_detail_btn"
+                android:text="Special"
+                android:textColor="#265c7a" />
+
+            <Button
+                android:id="@+id/id_busidetail_attend"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/id_busidetail_special"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/busi_detail_btn"
+                android:text="Attend"
+                android:textColor="#265c7a" />
+
+            <Button
+                android:id="@+id/id_busidetail_event"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/id_busidetail_special"
+                android:layout_alignBottom="@+id/id_busidetail_special"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/busi_detail_btn"
+                android:text="Events"
+                android:textColor="#265c7a" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/id_main_navBar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false" >
+
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/header_bk" />
+
+        <ImageView
+            android:id="@+id/id_busidetail_logo"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <ImageView
+            android:id="@+id/id_favoriteBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/tap_inactive_favorite" />
+
+        <ImageView
+            android:id="@+id/id_eventBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/tap_inactive_event" />
+
+        <ImageView
+            android:id="@+id/id_accountBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="160dp"
+            android:src="@drawable/tap_inactive_account" />
+
+        <ImageView
+            android:id="@+id/id_recommendBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="240dp"
+            android:src="@drawable/tap_inactive_recommend" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

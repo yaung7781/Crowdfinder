@@ -1,0 +1,422 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/id_main_navBar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false" >
+
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/header_bk" />
+
+        <ImageView
+            android:id="@+id/id_busicontact_logo"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <ImageView
+            android:id="@+id/id_favoriteBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/tap_inactive_favorite" />
+
+        <ImageView
+            android:id="@+id/id_eventBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/tap_inactive_event" />
+
+        <ImageView
+            android:id="@+id/id_accountBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="160dp"
+            android:src="@drawable/tap_inactive_account" />
+
+        <ImageView
+            android:id="@+id/id_recommendBtn"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="240dp"
+            android:src="@drawable/tap_inactive_recommend" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/id_mainScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="160dp"
+        android:layout_marginTop="50dp"
+        android:fillViewport="true" >
+        
+        <RelativeLayout
+            android:id="@+id/signupScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/id_busicontact_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="12dp"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+	
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="15dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="44dp"
+	            android:text="Address:"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textSize="12dp"
+	            android:textStyle="italic" />
+	
+	        <TextView
+	            android:id="@+id/id_busicontact_address"
+	            android:layout_width="wrap_content"
+	            android:layout_height="30dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="62dp"
+	            android:lines="2"
+	            android:text="Business Address"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="#000000"
+	            android:textSize="12dp" />
+	
+	        <TextView
+	            android:id="@+id/TextView02"
+	            android:layout_width="wrap_content"
+	            android:layout_height="15dp"
+	            android:layout_alignLeft="@+id/TextView01"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_below="@+id/TextView01"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="100dp"
+	            android:text="Description:"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textSize="12dp"
+	            android:textStyle="italic" />
+	        
+	        <ScrollView
+	            android:id="@+id/id_descriptionScrollView"
+	            android:layout_width="fill_parent"
+	            android:layout_height="50dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="118dp"
+	            android:fillViewport="true" >
+
+	            <TextView
+	                android:id="@+id/id_busicontact_description"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:lines="5"
+	                android:text="Business Description"
+	                android:textAppearance="?android:attr/textAppearanceSmall"
+	                android:textColor="#000000"
+	                android:textSize="12dp" />
+
+			</ScrollView>
+
+	        <TextView
+	            android:id="@+id/TextView04"
+	            android:layout_width="wrap_content"
+	            android:layout_height="15dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="176dp"
+	            android:text="Opening/Close Time:"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textSize="12dp"
+	            android:textStyle="italic" />
+	
+	        <TextView
+	            android:id="@+id/id_busicontact_openHour"
+	            android:layout_width="wrap_content"
+	            android:layout_height="48dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="198dp"
+	            android:lines="5"
+	            android:text="Business Time"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="#000000"
+	            android:textSize="12dp" />
+	
+	        <TextView
+	            android:id="@+id/TextView06"
+	            android:layout_width="wrap_content"
+	            android:layout_height="15dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="254dp"
+	            android:text="Category:"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textSize="12dp"
+	            android:textStyle="italic" />
+	
+	        <TextView
+	            android:id="@+id/id_busicontact_category"
+	            android:layout_width="wrap_content"
+	            android:layout_height="15dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="272dp"
+	            android:lines="5"
+	            android:text="Business Category"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="#000000"
+	            android:textSize="12dp" />
+	
+	        <TextView
+	            android:id="@+id/TextView08"
+	            android:layout_width="wrap_content"
+	            android:layout_height="15dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="295dp"
+	            android:text="Telephone:"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textSize="12dp"
+	            android:textStyle="italic" />
+	
+	        <TextView
+	            android:id="@+id/id_busicontact_contact"
+	            android:layout_width="wrap_content"
+	            android:layout_height="15dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="313dp"
+	            android:lines="5"
+	            android:text="Business Contact"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="#000000"
+	            android:textSize="12dp" />
+	
+	        <TextView
+	            android:id="@+id/TextView10"
+	            android:layout_width="wrap_content"
+	            android:layout_height="15dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="336dp"
+	            android:text="Facebook:"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textSize="12dp"
+	            android:textStyle="italic" />
+	
+	        <TextView
+	            android:id="@+id/id_busicontact_facebook"
+	            android:layout_width="wrap_content"
+	            android:layout_height="15dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="354dp"
+	            android:lines="5"
+	            android:text="Facebook"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="#000000"
+	            android:textSize="12dp" />
+	
+	        <TextView
+	            android:id="@+id/TextView12"
+	            android:layout_width="wrap_content"
+	            android:layout_height="15dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="377dp"
+	            android:text="Twitter:"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textSize="12dp"
+	            android:textStyle="italic" />
+	
+	        <TextView
+	            android:id="@+id/id_busicontact_twitter"
+	            android:layout_width="wrap_content"
+	            android:layout_height="15dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="395dp"
+	            android:lines="5"
+	            android:text="Twitter"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="#000000"
+	            android:textSize="12dp" />
+	
+	        <TextView
+	            android:id="@+id/TextView14"
+	            android:layout_width="wrap_content"
+	            android:layout_height="15dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="418dp"
+	            android:text="Link:"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textSize="12dp"
+	            android:textStyle="italic" />
+	
+	        <TextView
+	            android:id="@+id/id_busicontact_link"
+	            android:layout_width="wrap_content"
+	            android:layout_height="15dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_marginLeft="20dp"
+	            android:layout_marginRight="20dp"
+	            android:layout_marginTop="436dp"
+	            android:lines="5"
+	            android:text="Link"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="#000000"
+	            android:textSize="12dp" />
+	
+	    </RelativeLayout>
+	    
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/id_busicontact_ratingView"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/popup_bk" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Business Rating"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#1e6c8d"
+                android:textSize="17dp" />
+
+        </RelativeLayout>
+
+        <RatingBar
+            android:id="@+id/id_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="48dp"
+            android:progressDrawable="@drawable/large_rating_bar_drawable" >
+
+        </RatingBar>
+
+        <Button
+            android:id="@+id/id_busicontact_rateBtn"
+            android:layout_width="118dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/input2"
+            android:text="Rate Business"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

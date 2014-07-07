@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/id_event_cell"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/id_eventcell_name"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:text="Event Name Here"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id_eventcell_description"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="23dp"
+            android:maxLines="2"
+            android:text="Event Description Here "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/id_eventcell_date"
+            android:layout_width="125dp"
+            android:layout_height="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="53dp"
+            android:maxLines="2"
+            android:text="Event Date Here"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/id_eventcell_businame"
+            android:layout_width="154dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="53dp"
+            android:maxLines="2"
+            android:text="Business Name Here"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+</LinearLayout>

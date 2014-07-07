@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_main_navBar"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/id_main_navBar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="false" >
+
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/header_bk" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/id_main_navBar" >
+
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/passwordText"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/passwordText"
+            android:layout_marginTop="54dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/id_home_loginBtn"
+            android:layout_width="233dp"
+            android:layout_height="37dp"
+            android:layout_below="@+id/passwordText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/input2"
+            android:text="Login"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/id_home_facebookbtn"
+            android:layout_width="233dp"
+            android:layout_height="37dp"
+            android:layout_alignLeft="@+id/id_home_loginBtn"
+            android:layout_below="@+id/id_home_loginBtn"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/input3"
+            android:text="Login with Facebook"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/id_home_signupBtn"
+            android:layout_width="233dp"
+            android:layout_height="37dp"
+            android:layout_alignLeft="@+id/id_home_facebookbtn"
+            android:layout_below="@+id/id_home_facebookbtn"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/btn"
+            android:text="Sign up"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/id_home_forgotPasswordBtn"
+            android:layout_width="233dp"
+            android:layout_height="37dp"
+            android:layout_alignLeft="@+id/id_home_signupBtn"
+            android:layout_below="@+id/id_home_signupBtn"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/btn"
+            android:text="Forgot Password"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
